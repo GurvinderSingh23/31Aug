@@ -1,0 +1,17 @@
+# Check if given string starts with A and Endwith t.:==
+
+package com.yash;
+
+public class CheckString {
+    
+    public static void main(String[] args) {
+        String str="Guri";
+        System.out.println(str.startsWith("A"));
+        System.out.println(str.endsWith("t"));
+       
+        if(str.startsWith("A") && str.endsWith("t"))
+         System.out.println("Yes , String start with A and end with t");
+        else
+          System.out.println("No,String is not start with A and not end with t");
+   }
+   }
