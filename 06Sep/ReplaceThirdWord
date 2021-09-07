@@ -1,0 +1,20 @@
+# Replace character at 3rd index pos in upper case.:==
+
+package com.yash;
+public class ReplaceThirdWord {
+    
+    public static void main(String[] args) {
+        String str="Computer";
+        
+        char[] chr={str.charAt(3)};
+        char[] chrArray=str.toCharArray();
+       
+        String charAtThirdPosition=new String(chr);
+        String upperString=charAtThirdPosition.toUpperCase();
+        char upperChar=upperString.charAt(0);
+       chrArray[3]=upperChar;
+         System.out.println(chrArray);
+        
+    }
+    
+}
