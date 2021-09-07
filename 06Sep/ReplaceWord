@@ -1,0 +1,22 @@
+#  Replace a character a with e in following string without using inbuilt method.:==
+
+package com.yash;
+
+public class ReplaceWord {
+    
+    public static void main(String[] args) {
+        String str="Hallo";
+        char[] charString=str.toCharArray();
+        for(int i=0;i<charString.length;i++)
+        {
+            if(charString[i]=='a')
+            {
+                charString[i]='e';
+            }   
+        }
+        String newStr=new String(charString);
+        System.out.println(newStr);
+   
+      }
+    
+}
