@@ -1,0 +1,26 @@
+package com.yash;
+
+public class MaskString {
+
+    public static void main(String[] args) {
+    
+        String str1="GURI SINGH";
+        String arrayString[]=str1.split(" ");
+        StringBuilder sb=new StringBuilder();
+       for(String string:arrayString)
+        {
+            char[] charString=string.toCharArray();
+            for(int i=2;i<charString.length;i++)
+            {
+                charString[i]='X';
+            }
+            String newString=new String(charString);
+            sb.append(newString+" ");
+        }
+       String str2=sb.toString();
+       
+       str2.trim();
+       
+        System.out.println(str2);
+    }
+}
