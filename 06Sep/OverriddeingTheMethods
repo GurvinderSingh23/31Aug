@@ -1,3 +1,14 @@
+# Create a class Student with following attributes
+   
+   Student
+ =============
+   rollNo int
+   studentFirstName String
+   studentLastName  String
+   studentAge int
+ 
+ Override toString(),equals(),hashCode() without using tool.:===
+--------------------------------------------------------------------------------------------------------------------------------
 package com.yash;
 
 public class Student {
