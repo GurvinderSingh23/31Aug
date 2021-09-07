@@ -1,0 +1,22 @@
+# Create an array with five scores out of 100, compute the average of the scores and compute percentage:==
+
+package com.yash;
+ 
+public class Scores {
+    public static void main(String[] args) {
+        int[] scores=new int[] {45,91,67,34,55} ;
+        float totalScore=0;
+        float averageScore=0;
+        float percentage=0;
+        for(int i=0;i<scores.length;i++)
+        {
+            totalScore=scores[i]+totalScore;
+        }
+        System.out.println("Total score : "+totalScore);
+        averageScore=totalScore/scores.length;
+        percentage=(totalScore/(scores.length*100))*100;
+        System.out.println("Average Score is : "+averageScore);
+        System.out.println("Percentage is : "+percentage);
+    }
+    
+}
