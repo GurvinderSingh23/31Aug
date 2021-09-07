@@ -1,5 +1,6 @@
 # Create a variable of type String with following data,
-  String data="Java is Object oriented. Java is platform independent.Java is simple." :==
+  String data="Java is Object oriented. Java is platform independent.Java is simple." 
+  Search for word "Java" and count number of occurrences:==
 
 package com.yash;
 public class SearchString {
