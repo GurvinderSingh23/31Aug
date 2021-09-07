@@ -1,0 +1,51 @@
+# Write a code to check if given number is armstring number or not:==
+
+import java.util.Scanner;
+
+public class Armstrong {
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number:");
+        
+        int number=sc.nextInt();
+        int tempNum=number;
+        int checkNum=0;
+        int rem=0;
+        
+        int digit=0;
+        while(tempNum>0)
+        {
+            digit++;
+            tempNum=tempNum/10;
+        }
+        
+        System.out.println("Digits ="+digit);
+        tempNum=number;
+        
+        while(tempNum>0)
+        {
+           int tempRem=1; 
+           
+            rem=tempNum%10;
+            for(int i=1;i<=digit;i++)
+            {
+                tempRem=rem*tempRem;
+              
+            }
+            checkNum=checkNum+tempRem;
+            tempNum=tempNum/10;
+          
+        }
+        if(number==checkNum)
+        {
+            
+            System.out.println("Number is armstrong : "+checkNum);
+        }
+        else
+        {
+         System.out.println("Number is NOT armstrong : "+checkNum);
+
+        }
+        
+    }
+}
