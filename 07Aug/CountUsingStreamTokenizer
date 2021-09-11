@@ -1,0 +1,36 @@
+# In a String count number of words and count number of number ,Using StreamTokenizer:===
+
+package com.yash;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.io.StreamTokenizer;
+import java.io.StringReader;
+
+public class CountUsingStreamTokenizer {
+    
+    public static void main(String[] args) throws IOException {
+        
+        String str="12,RutheFord Building,Lake streeet,Chicago_21";
+        Reader r=new StringReader(str);
+        StreamTokenizer streamTokenizer=new StreamTokenizer(r);
+        int token=0;
+        int wordCount=0;
+        int numberCount=0;
+        while(true)
+        {
+            token=streamTokenizer.nextToken();
+            if(token==StreamTokenizer.TT_EOF)
+               break;
+            if(token==StreamTokenizer.TT_WORD)
+                wordCount++;
+            if(token==StreamTokenizer.TT_NUMBER)
+                numberCount++;
+        }
+        System.out.println("Count of Word:"+wordCount);
+        System.out.println("Count of Number: "+numberCount);
+        
+        
+    }
+    
+}
