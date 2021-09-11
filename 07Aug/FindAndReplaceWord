@@ -1,0 +1,17 @@
+# In a string find and replace a word.:===
+  e.g=search for a word "Java" And Replace "Java" with "c++":====
+
+package com.yash;
+import java.util.StringTokenizer;
+
+public class FindAndReplaceWord {
+    
+    public static void main(String[] args) {
+        
+        String str="Java is object oriented. Java is programming language";
+        StringBuffer sb=new StringBuffer();
+        int count=0;
+        sb.append(str.replace("Java", "c++"));
+        System.out.println(sb);
+    }
+}
