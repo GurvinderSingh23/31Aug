@@ -1,0 +1,84 @@
+package com.yash;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
+public class PersonClassDetailUsingReflection {
+    public static boolean isGetter(Method method){
+        if(!method.getName().startsWith("get"))
+            return false;
+        if(method.getParameterTypes().length != 0)   
+            return false;  
+      return true;
+    }
+    
+    public static boolean isSetter(Method method){
+        if(!method.getName().startsWith("set")) 
+            return false;
+        if(method.getParameterTypes().length != 1) 
+            return false;
+         return true;
+        }
+
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+
+        //Using .getClass() Method
+        Person person = new Person();
+        Class classData1 = person.getClass();
+        System.out.println("===========USING .getClass() ===========");
+        System.out.println("*****Constructor*****");
+        Constructor[] constructors1 = classData1.getConstructors();
+        for (Constructor constructor : constructors1) {
+            System.out.println(constructor);
+        }
+        Person person1 = (Person) classData1.newInstance();
+        System.out.println("*****Object*****");
+        System.out.println(person1);
+        
+        System.out.println("*****Implement Serializable interface or Not?*****");
+        Class[] interfaces1 = classData1.getInterfaces();
+        for (Class interface1 : interfaces1) {
+            if (interface1.getSimpleName().equals("Serializable")) {
+                System.out.println("Person Class implements Serializable Interface");
+            }
+        }
+        System.out.println("*****Has getter() and setter() *****");
+        Method[] methods=classData1.getMethods();
+       for(Method method : methods){
+            if(isGetter(method)) System.out.println("getter: " + method);
+            if(isSetter(method)) System.out.println("setter: " + method);
+        }
+        
+
+    
+                
+        //Using Class Loader
+        ClassLoader loader = ClassLoader.getSystemClassLoader();
+        System.out.println();
+        System.out.println("===========USING Class Loader ===========");
+        System.out.println("*****Constructor*****");
+        Class classData2 = loader.loadClass("com.yash.Person");
+        Constructor[] constructors2 = classData2.getConstructors();
+        for (Constructor constructor : constructors2) {
+            System.out.println(constructor);
+        }
+        Person person2 = (Person) classData2.newInstance();
+        System.out.println("*****Object*****");
+        System.out.println(person2);
+        //Using forName method
+        System.out.println();
+        Class classData3 = Class.forName("com.yash.Person");
+        System.out.println("===========USING forName() ===========");
+        System.out.println("*****Constructor*****");
+        Constructor[] constructors3 = classData3.getConstructors();
+        for (Constructor constructor : constructors3) {
+            System.out.println(constructor);
+        }
+        Person person3 = (Person) classData3.newInstance();
+        System.out.println("*****Object*****");
+        System.out.println(person3);
+
+    }
+
+}
