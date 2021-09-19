@@ -1,0 +1,41 @@
+
+package com.yash;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class CalculatingInterest implements Interest {
+    
+    @Override
+    public double simpleInterest(double amount,double rate,double time) {
+        double interest=(amount*rate*time)/100;
+        return interest;
+    }
+
+    @Override
+    public double compoundInterest(double amount,double rate,double time) {
+      
+       double CI = amount *(Math.pow((1 + (rate / 100)), time))-amount;
+        double interest=(amount*(Math.pow((1+rate/100), time)))-amount;
+        return CI;
+    }       
+    public static void main(String[] args) {
+        CalculatingInterest ci=new CalculatingInterest();
+        try(Scanner sc=new Scanner(System.in))
+        {
+            System.out.println("==>Enter Principle Amount :");
+            double amount=sc.nextDouble();
+            System.out.println("==>Enter rate of Interest :");
+            double rate=sc.nextDouble();
+            System.out.println("==>Enter Time Taken (in Years) :");
+            double time=sc.nextDouble();
+            System.out.println("Simple Interest = "+ci.simpleInterest(amount,rate,time));
+            System.out.println("Compound Interest = "+ci.compoundInterest(amount,rate,time));
+        }
+        catch(InputMismatchException e)
+        {
+            System.out.println("Input value is not valid");
+        }
+    }
+    
+}
