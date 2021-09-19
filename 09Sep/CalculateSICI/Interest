@@ -1,0 +1,7 @@
+package com.yash;
+
+public interface Interest {
+    double simpleInterest(double amount,double rate,double time);
+    double compoundInterest(double amount,double rate,double time);
+    
+}
