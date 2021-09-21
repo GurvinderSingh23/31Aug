@@ -1,3 +1,7 @@
+# Ask user to enter five names
+  convert third character in a name to uppercase:-----
+
+
 package com.yash.ThirdCharInUpperCase;
 
 import java.util.ArrayList;
