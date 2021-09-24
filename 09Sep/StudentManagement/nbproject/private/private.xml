@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="olms">
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/entity/Student.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/view/MainView.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/dao/StudentDAO.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/service/StudentService.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/view/StudentDataView.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/model/StudentModel.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/ui/MainStart.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/dao/StudentDAOImpl.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/controller/StudentController.java</file>
+            <file>file:/C:/Users/intel/Documents/NetBeansProjects/StudentManagement/src/com/yash/service/StudentServiceImpl.java</file>
+        </group>
+    </open-files>
+</project-private>
