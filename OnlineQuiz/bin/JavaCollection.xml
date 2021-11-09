@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JavaCollection>
+
+<questions id="1">
+<question>Which of these interface is not a part of Javaâ€™s collection framework?</question>
+<option1>1)List</option1>
+<option2>2)Set</option2>
+<option3>3)Sorted Map</option3>
+<option4>4)SortedList</option4>
+<correct>4</correct>
+</questions>
+
+<questions id="2">
+<question >Which of these methods deletes all the elements from invoking collection?</question>
+<option1>1)clear()</option1>
+<option2>2)reset()</option2>
+<option3>3)delete()</option3>
+<option4>4)refresh()</option4>
+<correct>1</correct>
+</questions>
+
+<questions id="3">
+<question >Which of these method can be used to increase the capacity of ArrayList object manually?</question>
+<option1>1)DecreaseCapacity</option1>
+<option2>2)IncreaseCapacity</option2>
+<option3>3)Capacity</option3>
+<option4>4)ensureCapacity</option4>
+<correct>4</correct>
+</questions>
+
+<questions id="4">
+<question >Which of these method of ArrayList class is used to obtain present size of an object?</question>
+<option1>1)index()</option1>
+<option2>2)size()</option2>
+<option3>3)capacity()</option3>
+<option4>4)length()</option4>
+<correct>1</correct>
+</questions>
+
+<questions id="5">
+<question >Which of these methods can be used to obtain a static array from an ArrayList object?</question>
+<option1>1)Array()</option1>
+<option2>2)toArray()</option2>
+<option3>3)convertArray()</option3>
+<option4>4)converttoArray</option4>
+<correct>3</correct>
+</questions>
+
+<questions id="6">
+<question >Which of these interface declares core method that all collections will have?</question>
+<option1>1)set</option1>
+<option2>2)EventListner</option2>
+<option3>3)Comparator</option3>
+<option4>4)Collection</option4>
+<correct>4</correct>
+</questions>
+
+<questions id="7">
+<question >Map implements collection interface?</question>
+<option1>1)False</option1>
+<option2>2)True</option2>
+<option3> </option3>
+<option4> </option4>
+<correct>1</correct>
+</questions>
+
+<questions id="8">
+<question >Is hashMap an ordered collection?</question>
+<option1>1)True</option1>
+<option2>2)False</option2>
+<option3> </option3>
+<option4> </option4>
+<correct>2</correct>
+</questions>
+
+<questions id="9">
+<question > Which of the below does not implement Map interface?</question>
+<option1>1)EnumMap</option1>
+<option2>2)Vector</option2>
+<option3>3)HashTable</option3>
+<option4>4)HashMap</option4>
+<correct>2</correct>
+</questions>
+
+<questions id="10">
+<question >How can we remove an object from ArrayList?</question>
+<option1>1)remove() method and using Iterator</option1>
+<option2>2)using iterator</option2>
+<option3>3)remove() method</option3>
+<option4>4)delete() method</option4>
+<correct>1</correct>
+</questions>
+</JavaCollection>

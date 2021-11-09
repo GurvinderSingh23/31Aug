@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JavaMultiThreading>
+
+<questions id="1">
+<question>What is multithreaded programming?</question>
+<option1>1)It’s a process in which two different processes run simultaneously</option1>
+<option2>2)It’s a process in which two or more parts of same process run simultaneously</option2>
+<option3>3)It’s a process in which many different process are able to access same information</option3>
+<option4>4)It’s a process in which a single process can access information from many sources</option4>
+<correct>2</correct>
+</questions>
+
+<questions id="2">
+<question >Which of these are types of multitasking?</question>
+<option1>1)Process based</option1>
+<option2>2)Thread based</option2>
+<option3>3)Process and Thread based</option3>
+<option4>4)None of the mentioned</option4>
+<correct>3</correct>
+</questions>
+
+<questions id="3">
+<question >Thread priority in Java is?</question>
+<option1>1)Integer</option1>
+<option2>2)Float</option2>
+<option3>3)double</option3>
+<option4>4)long</option4>
+<correct>1</correct>
+</questions>
+
+<questions id="4">
+<question>What requires less resources?</question>
+<option1>1)Thread</option1>
+<option2>2)Process</option2>
+<option3>3)Thread and Process</option3>
+<option4>4)Neither Thread nor Process</option4>
+<correct>1</correct>
+</questions>
+
+<questions id="5">
+<question>What is true about threading?</question>
+<option1>1)run() method calls start() method and runs the code</option1>
+<option2>2)run() method creates new thread</option2>
+<option3>3)run() method can be called directly without start() method being called</option3>
+<option4>4)start() method creates new thread and calls code written in run() method</option4>
+<correct>4</correct>
+</questions>
+
+<questions id="6">
+<question>Which of the following is a correct constructor for thread?</question>
+<option1>1)Thread(Runnable a, String str)</option1>
+<option2>2)Thread(int priority)</option2>
+<option3>3)Thread(Runnable a, int priority)</option3>
+<option4>4)Thread(Runnable a, ThreadGroup t)</option4>
+<correct>1</correct>
+</questions>
+
+<questions id="7">
+<question>Which of the following stops execution of a thread?</question>
+<option1>1)Calling SetPriority() method on a Thread object</option1>
+<option2>2)Calling notify() method on an object</option2>
+<option3>3)Calling wait() method on an object</option3>
+<option4>4)Calling read() method on an InputStream object</option4>
+<correct>2</correct>
+</questions>
+
+<questions id="8">
+<question>Which of the following will ensure the thread will be in running state?</question>
+<option1>1)yield()</option1>
+<option2>2)notify()</option2>
+<option3>3)wait()</option3>
+<option4>4)Thread.killThread()</option4>
+<correct>3</correct>
+</questions>
+
+<questions id="9">
+<question>Which of these method wakes up all the threads?</question>
+<option1>1)wakeAll()</option1>
+<option2>2)notify()</option2>
+<option3>3)start()</option3>
+<option4>4)notifyAll()</option4>
+<correct>4</correct>
+</questions>
+
+<questions id="10">
+<question>What does not prevent JVM from terminating?</question>
+<option1>1)Process</option1>
+<option2>2)Daemon Thread</option2>
+<option3>3)User Thread</option3>
+<option4>4) JVM Thread</option4>
+<correct>2</correct>
+</questions>
+</JavaMultiThreading>
