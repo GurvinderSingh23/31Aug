@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+<element name="students">
+	<complexType>
+		<sequence>
+			<element name="student" maxOccurs="unbounded" minOccurs="1">
+					<complexType>
+						<sequence>
+							<element name="firstname" type="string"/>
+							<element name="lastname" type="string"/>
+							<element name="phonenumber" type="string"/>
+							<element name="totalmarks" type="decimal"/>
+						</sequence>
+						<attribute name="rollno" type="int" use="required"></attribute>
+					</complexType>
+				</element>				
+		</sequence>	
+	</complexType>
+	</element> 
+
+</schema>

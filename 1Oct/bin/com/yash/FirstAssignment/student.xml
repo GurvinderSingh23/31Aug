@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<student rollno="1">
+<firstname>Guri</firstname>
+<lastname>Singh</lastname>
+<phonenumber>8524242</phonenumber>
+<totalmarks>467</totalmarks>
+</student>
+<student rollno="2">
+<firstname>sidhuu</firstname>
+<lastname>moose</lastname>
+<phonenumber>8524242</phonenumber>
+<totalmarks>502</totalmarks>
+</student>
+
+</students>
